@@ -178,7 +178,6 @@ footer{
     }
 }
 
-
 /*Mixin jumbotron*/
 @mixin fondo{
     width: 100%;
@@ -207,8 +206,4 @@ footer{
     height:600px;
     background-image: $fondo4;
 }
-//*Imports*//
-// @import "_item.scss";
-// @import "_clientes.scss";
-// @import"_nosotros.scss";
-// @import"_contacto.scss";
+

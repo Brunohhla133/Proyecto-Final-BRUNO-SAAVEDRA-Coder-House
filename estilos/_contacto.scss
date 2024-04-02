@@ -1,0 +1,102 @@
+/*Contacto*/
+.linkC{
+    width: $size1;
+    border: 5px solid $color3;
+    background-image: url(../imagenes/tienda-ropa/Diseño\ sin\ título\ \(13\).png);
+    background-position: center;
+    background-size: cover;
+    a{
+        display: block;
+        color: $color1;
+        text-shadow: 0 0 5px $color2;
+        font-size: 40px;
+        padding: 10px;
+        margin: 20px;
+        text-align: center;
+    }
+}
+
+.subtittle{
+    width: $size1;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    h3{
+        background-color: $color4;
+        color: aliceblue;
+        font-size: 30px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        border: 5px solid $color1;
+    }
+}
+
+.formulario{
+    width: 50%;
+    margin: 0 auto;
+    height: 600px;
+    background-color: $color4;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 5px solid $color1;
+    h4{
+        font-size: 30px;
+        background-color: $color4;
+        color: aliceblue;
+        text-align: center;
+        border-radius: 10px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 5px solid $color1;
+    }
+    .contact{
+        width: $size1;
+        background-color: $color4;
+        color: $color3;
+        padding: 10px;
+        margin-bottom: 30px;
+        border-radius: 30px;
+        border: 1px solid $color1;
+    }
+    .buttonC{
+        font-size: 20px;
+        background-color: $color4;
+        color: aliceblue;
+        width: $size1;
+        text-align: center;
+        height: 50px;
+        border-radius: 10px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        border-color: $color1;
+    }
+}
+
+/* Media Queries Contacto.html */
+@media only screen and (width < 600px){
+    .formulario{
+        width: 100%;
+    }
+}
+
+@media only screen and (width < 900px){
+    .formulario{
+        width: 100%;
+    }
+}

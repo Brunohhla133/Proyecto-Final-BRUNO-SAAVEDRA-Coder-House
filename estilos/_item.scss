@@ -1,0 +1,117 @@
+//*Container-Items*//
+.item{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: $size2;
+    border-radius: 50px;
+    overflow: hidden;
+    img{
+        width: $size1;
+        transition: all .5s;
+    }
+}
+
+.conteiner-items:hover{
+    box-shadow: 1px 1px 10px 1px $color2;
+}
+
+.item:hover{
+    box-shadow: 1px 1px 10px 1px $color2;
+}
+
+.item:hover img{
+    transform: scale(1.1);
+}
+
+.info-product{
+    h4{
+        background-color: $color2;
+        border: 5px solid $color3;
+        font-size: 30px;
+        width: $size2;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+    }
+    h3{
+        font-size: 40px;
+        color: aliceblue;
+        text-align: center;
+        margin-top:20px;
+        border-radius: 1px;
+    }
+}
+
+p.old-price{
+    background-color: hsl(0, 0%, 0%);
+    font-size: 30px;
+    text-align: center;
+    color: aliceblue;
+    padding: 3%;
+    border-radius: 1px;
+    text-decoration: line-through;
+}
+
+
+p.price {
+    background-color: hsl(0, 0%, 0%);
+    font-size: 30px;
+    text-align: center;
+    color: aliceblue;
+    padding: 3%;
+    border-radius: 1px;
+}
+
+.button{
+    background-color: $color4;
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 20px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    transition: all .5s;
+    border: 3px solid $color3;
+    button{
+        font-weight:bold;
+        text-transform:uppercase;
+        color:aliceblue;
+        background: none;
+        border-bottom: none;
+        border-right: none;
+        border-top: none;
+        border-left:none;
+        padding: 1px;
+        margin: 2px;
+        font-size: 20px;
+    }
+}
+.button:hover{
+    transform: scale(1.2);
+}
+@media screen and (width < 300px){
+    .button{
+        button{
+            width: $size1;
+            text-align: center;
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (width > 800px){
+    button{
+        margin-top: 10px;
+    }
+}

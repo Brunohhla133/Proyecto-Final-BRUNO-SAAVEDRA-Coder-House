@@ -1,0 +1,78 @@
+/* Clientes */
+
+.intro{
+    text-align: center;
+    width: $size1;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.container{
+    background-color: hsla(36, 3%, 30%, 0.356);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    img{
+        display: block;
+        margin: 0 auto;
+        width:fit-content;
+        height: 150px;
+        border: 5px solid $color3;
+    }
+    p{
+        color: aliceblue;
+        font-size: 20px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        span{
+        color: $color2;
+    }
+    }
+}
+
+h3{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    color: $color2;
+    margin-bottom: 15px;
+}
+
+
+
+/* Media Queries Clientes.html */
+@media only screen and (width < 600px){
+    .intro{
+        display: block;
+        margin: 0 auto;
+        padding: 2px;
+        width: $size1;
+        text-align: start;
+        font-size: 20px;
+    }
+}
+    
+    
+    @media only screen and (max-width:600px){
+    .container{
+        width: 100%;
+    }
+}
+    
+    @media only screen and (max-width:1200px){
+    .container{
+        width: 100%;
+    }
+}
+    
+    @media only screen and (max-width:1200px){
+    .container img{
+        width: 150px;
+        height: auto;
+    }
+}
+@import "estilos.scss";
