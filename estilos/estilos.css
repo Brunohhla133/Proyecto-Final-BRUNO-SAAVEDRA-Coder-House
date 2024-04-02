@@ -48,7 +48,7 @@ body {
 }
 
 .container-fluid .navbar-brand {
-  background-image: url(../imagenes/tienda-ropa/Diseño\ sin\ título\ \(13\).png);
+  background-image: url(../assets/tienda-ropa/Diseño\ sin\ título\ \(13\).png);
   background-position: center;
   background-size: cover;
 }
@@ -56,7 +56,7 @@ body {
 .banner {
   width: 100%;
   background-color: black;
-  background-image: url(../imagenes/tienda-ropa/Diseño\ sin\ título\ \(13\).png);
+  background-image: url(../assets/tienda-ropa/Diseño\ sin\ título\ \(13\).png);
   background-position: center;
   background-size: cover;
   display: grid;
@@ -104,6 +104,378 @@ h2 {
   box-shadow: inset 0 0 10px #e68b14;
 }
 
+.item {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 50%;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.item img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.conteiner-items:hover {
+  box-shadow: 1px 1px 10px 1px #FFBD59;
+}
+
+.item:hover {
+  box-shadow: 1px 1px 10px 1px #FFBD59;
+}
+
+.item:hover img {
+  transform: scale(1.1);
+}
+
+.info-product h4 {
+  background-color: #FFBD59;
+  border: 5px solid #e68b14;
+  font-size: 30px;
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+.info-product h3 {
+  font-size: 40px;
+  color: aliceblue;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 1px;
+}
+
+p.old-price {
+  background-color: hsl(0, 0%, 0%);
+  font-size: 30px;
+  text-align: center;
+  color: aliceblue;
+  padding: 3%;
+  border-radius: 1px;
+  text-decoration: line-through;
+}
+
+p.price {
+  background-color: hsl(0, 0%, 0%);
+  font-size: 30px;
+  text-align: center;
+  color: aliceblue;
+  padding: 3%;
+  border-radius: 1px;
+}
+
+.button {
+  background-color: hsla(36, 3%, 30%, 0.911);
+  border-radius: 10px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 20px;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  transition: all 0.5s;
+  border: 3px solid #e68b14;
+}
+.button button {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: aliceblue;
+  background: none;
+  border-bottom: none;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  padding: 1px;
+  margin: 2px;
+  font-size: 20px;
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (width < 300px) {
+  .button button {
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+  }
+}
+@media screen and (width > 800px) {
+  button {
+    margin-top: 10px;
+  }
+}
+/* Clientes */
+.intro {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  color: aliceblue;
+  font-size: 40px;
+}
+
+.container {
+  background-color: hsla(36, 3%, 30%, 0.356);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container img {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  height: 150px;
+  border: 5px solid #e68b14;
+}
+.container p {
+  color: aliceblue;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container p span {
+  color: #FFBD59;
+}
+
+h3 {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  color: #FFBD59;
+  margin-bottom: 15px;
+}
+
+/* Media Queries Clientes.html */
+@media only screen and (width < 600px) {
+  .intro {
+    display: block;
+    margin: 0 auto;
+    padding: 2px;
+    width: 100%;
+    text-align: start;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container img {
+    width: 150px;
+    height: auto;
+  }
+}
+/* Nosotros */
+/*Maps*/
+.maps {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 5px solid #e68b14;
+}
+.maps a {
+  text-decoration: none;
+  color: #FFD194;
+  font-size: 50px;
+  text-shadow: 0 0 10px #e68b14;
+}
+.maps h4 {
+  font-size: 30px;
+  color: aliceblue;
+}
+.maps p {
+  color: aliceblue;
+  font-size: 30px;
+}
+
+/*Galeria*/
+.galeria {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 200px);
+  padding: 20px;
+  grid-gap: 20px;
+}
+
+.item-g {
+  border: 2px solid #FFBD59;
+  background-size: cover;
+  background-position: center;
+}
+
+.item1 {
+  background-image: url(../assets/tienda-ropa/Diseño\ sin\ título\ \(4\).png);
+}
+
+.item2 {
+  background-image: url(../assets/tienda-ropa/Diseño\ sin\ título\ \(2\).png);
+}
+
+.item3 {
+  background-image: url(../assets/tienda-ropa/Diseño\ sin\ título\ \(5\).png);
+}
+
+.item4 {
+  background-image: url(../assets/tienda-ropa/Diseño\ sin\ título\ \(6\).png);
+}
+
+.item5 {
+  background-image: url(../assets/tienda-ropa/Diseño\ sin\ título\ \(27\).png);
+}
+
+.item6 {
+  background-image: url(../assets/tienda-ropa/Diseño\ sin\ título\ \(28\).png);
+}
+
+.item7 {
+  background-image: url(../assets/tienda-ropa/Diseño\ sin\ título\ \(8\).png);
+}
+
+.item8 {
+  background-image: url(../assets/tienda-ropa/Diseño\ sin\ título\ \(7\).png);
+}
+
+/* Media Galeria*/
+@media only screen and (width > 480px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 400px);
+  }
+}
+@media screen and (width < 800px) {
+  .galeria {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    padding: 20px;
+    grid-gap: 20px;
+  }
+}
+/*Contacto*/
+.linkC {
+  width: 100%;
+  border: 5px solid #e68b14;
+  background-image: url(../assets/tienda-ropa/Diseño\ sin\ título\ \(13\).png);
+  background-position: center;
+  background-size: cover;
+}
+.linkC a {
+  display: block;
+  color: #FFD194;
+  text-shadow: 0 0 5px #FFBD59;
+  font-size: 40px;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+.subtittle {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+.subtittle h3 {
+  background-color: hsla(36, 3%, 30%, 0.911);
+  color: aliceblue;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 5px solid #FFD194;
+}
+
+.formulario {
+  width: 50%;
+  margin: 0 auto;
+  height: 600px;
+  background-color: hsla(36, 3%, 30%, 0.911);
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: 5px solid #FFD194;
+}
+.formulario h4 {
+  font-size: 30px;
+  background-color: hsla(36, 3%, 30%, 0.911);
+  color: aliceblue;
+  text-align: center;
+  border-radius: 10px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 5px solid #FFD194;
+}
+.formulario .contact {
+  width: 100%;
+  background-color: hsla(36, 3%, 30%, 0.911);
+  color: #e68b14;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  border: 1px solid #FFD194;
+}
+.formulario .buttonC {
+  font-size: 20px;
+  background-color: hsla(36, 3%, 30%, 0.911);
+  color: aliceblue;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  border-radius: 10px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  border-color: #FFD194;
+}
+
+/* Media Queries Contacto.html */
+@media only screen and (width < 600px) {
+  .formulario {
+    width: 100%;
+  }
+}
+@media only screen and (width < 900px) {
+  .formulario {
+    width: 100%;
+  }
+}
 /*Footer*/
 footer {
   width: 100%;
@@ -154,7 +526,7 @@ footer p {
   height: 500px;
   background-position: center;
   background-size: cover;
-  background-image: url(../imagenes/tienda-ropa/Diseño\ sin\ título\ \(23\).png);
+  background-image: url(../assets/tienda-ropa/Diseño\ sin\ título\ \(23\).png);
 }
 
 .jumbotron-2 {
@@ -162,7 +534,7 @@ footer p {
   height: 500px;
   background-position: center;
   background-size: cover;
-  background-image: url(../imagenes/tienda-ropa/Diseño\ sin\ título\ \(3\).png);
+  background-image: url(../assets/tienda-ropa/Diseño\ sin\ título\ \(3\).png);
 }
 
 .jumbotron-3 {
@@ -170,7 +542,7 @@ footer p {
   height: 500px;
   background-position: center;
   background-size: cover;
-  background-image: url(../imagenes/tienda-ropa/Diseño\ sin\ título\ \(18\).png);
+  background-image: url(../assets/tienda-ropa/Diseño\ sin\ título\ \(18\).png);
 }
 
 .jumbotron-4 {
@@ -179,7 +551,7 @@ footer p {
   background-position: center;
   background-size: cover;
   height: 600px;
-  background-image: url(../imagenes/tienda-ropa/Contacto.png);
+  background-image: url(../assets/tienda-ropa/Contacto.png);
 }
 
 /*# sourceMappingURL=estilos.css.map */
