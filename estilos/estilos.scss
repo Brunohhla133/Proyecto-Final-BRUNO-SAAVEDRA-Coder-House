@@ -1,0 +1,214 @@
+//*Paleta de colores*//
+$color1:#FFD194;
+$color2: #FFBD59;
+$color3:#e68b14;
+$color4:hsla(36, 3%, 30%, 0.911);
+//*Font Family*//
+$font1: serif;
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
+//*Dimensiones*//
+$size1: 100%;
+$size2:50%;
+/*Media queries*/
+$xs: 576px;
+$sm: 576px;
+$md: 768;
+$lg: 992;
+$xl: 1200px;
+/*Backgrouds*/
+$fondo1: url(../imagenes/tienda-ropa/Diseño\ sin\ título\ \(23\).png);
+$fondo2: url(../imagenes/tienda-ropa/Diseño\ sin\ título\ \(3\).png);
+$fondo3: url(../imagenes/tienda-ropa/Diseño\ sin\ título\ \(18\).png);
+$fondo4: url(../imagenes/tienda-ropa/Contacto.png);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+body{
+    background-color:  black;
+}
+
+
+//*NavBar*//
+.navbar{
+    width: $size1;
+    background-color: hsla(36, 3%, 30%, 0.959);
+    z-index: 1;
+    position: fixed;
+    .nav-link{
+        font-size: 15px;
+        color: white;
+        text-shadow:0 0 5px $color3;
+        margin: 20px;
+    }
+    .nav-link:hover{
+        color: $color1;
+    } 
+    .navbar-brand{
+        padding: 10px;
+        border: 5px solid $color2;
+        background-color: $color4;
+    }
+    .navbar-brand, .a{
+        font-size: 30px;
+        text-shadow:0 0 5px $color3;
+        color: $color2;
+    }
+    .navbar-brand:hover{
+        color: $color2;
+    }
+    .container-fluid button{
+        color: $color3;
+        background-color: $color2;
+        border: none;
+    }
+}
+.container-fluid{
+    .navbar-brand{
+        background-image: url(../imagenes/tienda-ropa/Diseño\ sin\ título\ \(13\).png);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+//*Jumbotron p-5*//
+
+.banner{
+    width: $size1;
+    background-color: black;
+    background-image: url(../imagenes/tienda-ropa/Diseño\ sin\ título\ \(13\).png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items:center;
+    padding-top: 40px;
+    img{
+        width: $size1;
+        display: grid;
+        place-items:center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+/* h1 */
+.titulo{
+    h1{
+        width: $size1;
+        font-size: 40px;
+        text-align: center;
+        color: $color2;
+        padding: 10px;
+        margin-top: 20px;
+        text-shadow: 0 0 10px $color3;
+    }
+}
+
+
+
+/* Main */
+main {
+    width: $size1;
+    overflow: hidden;
+    padding: 10px;
+}    
+    h2{
+    width: 70%;
+    display: block;
+    margin: 50px auto;
+    background-color: $color2;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    border-radius: 10px;
+    border: 5px solid $color3;
+    padding: 5px;
+    box-shadow: inset 0 0 10px $color3;
+}
+
+
+
+/*Footer*/
+
+footer{
+    width: $size1;
+    background-color: $color4;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    p{
+        color: aliceblue;
+        margin-bottom: 20px;
+    }
+}
+
+.redes a{
+    color: $color1;
+    text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (width < 600px) {
+    footer{
+        width: $size1;
+    }
+    h2{
+        width: $size1;
+        font-size: 20px;
+        text-align: center;
+    }
+    .p-5 img{
+        width: $size1;
+    }
+    .item{
+        width: 90%;
+    }
+    h1{
+    width: $size1;
+    text-align: center;
+    }
+}
+@media screen and (width > 1200px){
+    footer{
+        width: 100%;
+    }
+}
+
+
+/*Mixin jumbotron*/
+@mixin fondo{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+.jumbotron-1{
+    @include fondo;
+    background-image: $fondo1;
+}
+
+.jumbotron-2{
+    @include fondo;
+    background-image: $fondo2;
+}
+
+.jumbotron-3{
+    @include fondo;
+    background-image: $fondo3;
+}
+
+.jumbotron-4{
+    @include fondo;
+    height:600px;
+    background-image: $fondo4;
+}
+//*Imports*//
+// @import "_item.scss";
+// @import "_clientes.scss";
+// @import"_nosotros.scss";
+// @import"_contacto.scss";
